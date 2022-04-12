@@ -103,6 +103,7 @@
         var logWarn = createLogger(console.warn);
 
         kc.init = function (initOptions) {
+            console.log("BABYAGA");
             kc.authenticated = false;
             inInit = true;
             callbackStorage = createCallbackStorage();
@@ -805,6 +806,7 @@
                 //
 
                 if ((kc.flow != 'implicit') && code && !hide) {
+                    console.log("JEUENEOih");
                     var params = 'code=' + code + '&grant_type=authorization_code';
                     var url = kc.endpoints.token();
 
